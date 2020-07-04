@@ -26,12 +26,12 @@ border-start-end-radius: 100px;
     box-sizing: border-box;
     padding: 10px;
     margin-top: 30px;
-   
+    background-image: url("images/me.jpg");
     border-radius: 50%;
 }
 
 .bgimg{
-background-image: url("bg.jpg");
+background-image: url("images/bg.jpg");
 position: absolute;
 top: 0;
 left: 0;
