@@ -1,45 +1,44 @@
 body{
     background-color: rgba(0, 0, 0, 0.858);
-   
-
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
 }
 .navbarbar{
-
+z-index: 9999;
 
 font-family: 'Poppins', sans-serif;
 
 }
-.jumbo{
-    
-    border-radius: 60px;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 5%;
-}
 
-.nbrounded{
-border-start-end-radius: 100px;
 
-}
+
 
 .roundimage{
     box-sizing: border-box;
-    padding: 10px;
-    margin-top: 30px;
-    background-image: url("images/me.jpg");
+    height: 70%;
+    width: 500px;
     border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+.progcircle{
+   height: 200px;
+    
+    
 }
 
 .bgimg{
 background-image: url("images/bg.jpg");
-position: absolute;
+position: fixed;
+
+
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
 
 
-background-size: cover;
+background-size:cover;
 background-repeat: no-repeat;
 -webkit-filter: blur(5px);
 -moz-filter: blur(5px);
@@ -49,6 +48,7 @@ background-repeat: no-repeat;
  z-index: -1;
 
 }
+    
 
 
 
