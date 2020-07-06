@@ -1,25 +1,31 @@
 body{
-    background-color: rgba(0, 0, 0, 0.858);
+    background-color: rgba(0, 0, 0, 0.945);
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
 }
 .navbarbar{
 z-index: 9999;
 
-font-family: 'Poppins', sans-serif;
 
 }
+li{
+display: inline;
 
+}
 
 
 
 .roundimage{
     box-sizing: border-box;
     height: 70%;
-    width: 500px;
-    border-radius: 50%;
+   
+    width: 70%;
+    min-width: 340px;
     display: block;
     margin: auto;
+    border-radius: 50%;
+   
+ 
 }
 .progcircle{
    height: 200px;
@@ -28,25 +34,27 @@ font-family: 'Poppins', sans-serif;
 }
 
 .bgimg{
-background-image: url("images/bg.jpg");
+background-image: url("images/bg4.jpg");
 position: fixed;
-
-
+background-position: center;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-
-
 background-size:cover;
 background-repeat: no-repeat;
--webkit-filter: blur(5px);
--moz-filter: blur(5px);
- -o-filter: blur(5px);
- -ms-filter: blur(5px);
- filter: blur(5px);
  z-index: -1;
 
+}
+
+.education{
+   
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.entry{
+    opacity: 0.0;
 }
     
 
