@@ -10,7 +10,7 @@
 </head>
 <body >
  
-    <div class="bgimg" id="back"> </div>
+    <div  id="back"> </div>
   
 
       <div class="container-fluid  con p-4"  >
@@ -152,24 +152,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script>
       $(document).ready(function(){
-        // $('.entry').fadeTo(1750,1,function(){
-
-        // });
-        // $('#back').load(function(){
-        //   $('.entry').animate({opacity:1},1750,function(){})
-        // });
-     
-  //       $('body')
-  // .css('background-image','url(http://picture.de/image.png)')
-  // .waitForImages(function() {
-  //   $('.entry').animate({opacity:1},1750,function(){})
-  //   // This *does* work
-  // }, $.noop, true);
-  $('.bgimg').waitForImages(function() {
-    // All descendant images have loaded, now slide up.
+          $('#back')
+  .addClass('bgimg')
+  .waitForImages(function() {
     $('.entry').animate({opacity:1},1750,function(){})
-});
+    // This *does* work
+  }, $.noop, true);
+ 
+
        
+      });
       });
 
     </script>
