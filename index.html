@@ -10,7 +10,7 @@
 </head>
 <body >
  
-    <div class="bgimg" > </div>
+    <div class="bgimg" id="back"> </div>
   
 
       <div class="container-fluid  con p-4"  >
@@ -149,13 +149,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script>
       $(document).ready(function(){
-        $('.entry').fadeTo(1850,1,function(){
+        // $('.entry').fadeTo(1750,1,function(){
 
-        });
+        // });
+        // $('#back').load(function(){
+        //   $('.entry').animate({opacity:1},1750,function(){})
+        // });
      
-
+  //       $('body')
+  // .css('background-image','url(http://picture.de/image.png)')
+  // .waitForImages(function() {
+  //   $('.entry').animate({opacity:1},1750,function(){})
+  //   // This *does* work
+  // }, $.noop, true);
+  $('.bgimg').waitForImages(function() {
+    // All descendant images have loaded, now slide up.
+    $('.entry').animate({opacity:1},1750,function(){})
+});
        
       });
 
