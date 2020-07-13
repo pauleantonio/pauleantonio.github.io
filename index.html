@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
     <title>PAULE, ANTONIO</title>
 </head>
 <body >
  
     <div  id="back"> </div>
-  
+    <nav class="navbar navbar-expand-sm navbar-dark bg-transparent" id="nav">
 
-      <div class="container-fluid  con p-4"  >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+      
+          <li class="nav-item active">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+      
+        </ul>
+     
+      </div>
+    </nav>
+
+      <div class="container-fluid p-4"  >
         <div class="row entry" id="whole">
   
           <div class="col-md-1 " ></div>
@@ -35,7 +57,7 @@
   
       
       <div class="container-fluid  entry" style="margin-top: 150px;" >
-        <div class=" m-5 text-center" style="font-size:40px">Techinical Skills</div>
+        <div class=" m-5 text-center" style="font-size:40px" id="skills">Techinical Skills</div>
         <div class="container flex-row">
           <div class="row " >
   
@@ -78,8 +100,6 @@
             <li class="" >Laravel</li>
             <li>HTML</li>
             <li>MYSQL</li>
-            <li>SQLITE</li>
-            <li>FIREBASE</li>
             <li>CSS</li>
             <li>Javascript</li>
             <li>JQUERY</li>
@@ -90,11 +110,38 @@
 <br><br>
 <br><br>
         <div class="container">
-          <div class="row">   <h1 class="mx-auto">Certificates</h1></div>
-          <img src="images/cert1.jpg " class="" style="display: block; min-height: 300px; min-width:340px; width: 55%;margin: auto;"  alt="">
-          <p class="d-flex justify-content-center m-3">Full Stack Web Developer Bootcamp</p>
-          <img src="images/cert2.jpg " class="" style="display: block; min-height: 300px; min-width:340px; width: 55%;margin: auto; margin-top: 75px;"  alt="">
-          <p class="d-flex justify-content-center m-3">Internship</p>
+  
+          <div class="row">
+            <h1 class="mx-auto">Certificates</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class=""><img src="images/cert1.jpg " class="cert">
+                    <p class="d-flex justify-content-center m-3">Full Stack Web Developer Bootcamp</p></div>
+                  </div>
+                <div class="carousel-item">
+                  <div class=""><img src="images/cert2.jpg " class="cert" >
+                    <p class="d-flex justify-content-center m-3">Internship</p></div>
+                </div>
+
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+
+
+
+
+
+          </div>
+       
         </div>
 <br><br>
         <div class="container education">
@@ -102,19 +149,20 @@
           <br>
           
           <div class="row justify-content-around ">
-            <div  class="col-4-sm p-1">
+            <div  class="col-4-sm ">
               <h5>Legarda Elementary School</h4>
               <p>Address - Sampaloc, Manila, 1008 Metro Manila</p>
               <p>Year 2008</p>
             </div>
-            <div class="col-4-sm p-1">
+
+            <div class="col-4-sm ">
               <h5>Ramon Magsaysay High School</h4>
                 <p>Address -  España Boulevard, Don Quijote St</p>
            
               <p>Year 2020</p>
 
             </div>
-            <div class="col-4-sm p-1">
+            <div class="col-4-sm ">
               <h5>Cavite State University - Carmona</h4>
                 <p>Address -  Maduya, Carmona, Cavite</p>
               <p>Bachelor of Science in Information Technology</p>
@@ -123,6 +171,15 @@
             </div>
           </div>
 
+        </div>
+        <br><br>
+        <div class="container">
+          <div class="row">
+
+            <h1 class="mx-auto" id="About">About Me</h1>
+             
+          </div>
+     
         </div>
       
       </div>
@@ -154,26 +211,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
     <script>
       $(document).ready(function(){
-        // $('.entry').fadeTo(1750,1,function(){
+    
           $('.entry').animate({opacity:1},1750,function(){})
-        // });
-        // $('#back').load(function(){
-        //   $('.entry').animate({opacity:1},1750,function(){})
-        // });
      
         $('#back')
   .addClass('bgimg')
   .waitForImages(function() {
     $('.entry').animate({opacity:1},1750,function(){})
-    // This *does* work
-  });
  
-
+  }, $.noop, true);
+ 
+  
        
       });
 
     </script>
-    <!-- Custom JS for background color on scrolling -->
+    <script type="text/javascript">
+      $(function(){
+        $('.nav-link a').click(function(){
+          $("html,body").animate({
+            scrollTop:$($.attr(this,'href')).offset().top
+          },200);
+        });
+      });
+    </script>
+
 
 </body>
 </html>
