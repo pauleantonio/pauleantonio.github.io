@@ -2,6 +2,8 @@ body{
     background-color: rgba(0, 0, 0, 0.945);
     font-family: 'Poppins', sans-serif;
     color: aliceblue;
+    margin: 0;
+    padding: 0;
 }
 .navbarbar{
 z-index: 9999;
@@ -71,6 +73,17 @@ z-index: -1;
     
 html {
     scroll-behavior: smooth;
+  }
+
+  .contactbg{
+    background-color: rgb(1, 22, 41);
+    color: white;
+  }
+
+
+  .icon li{
+    margin-right: 20px;
+
   }
 
 
