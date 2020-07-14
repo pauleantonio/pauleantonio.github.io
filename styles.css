@@ -62,7 +62,7 @@ z-index: -1;
 }
 
 .education{
-   
+   margin-top: 50px;
     border-radius: 50px;
     padding: 10px;
 }
@@ -76,6 +76,7 @@ html {
   }
 
   .contactbg{
+      margin-top: 50px;
     background-color: rgba(1, 22, 41, 0.726);
     color: white;
   }
